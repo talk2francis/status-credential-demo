@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": "user-student-1",
+      "name": "Amina Iroh",
+      "email": "amina.student@statuscredential.io",
+      "walletAddresses": ["0x1234...ABCD"],
+      "role": "student",
+      "xp": 1240,
+      "referrals": ["ref-001"]
+    },
+    {
+      "id": "user-instructor-1",
+      "name": "Leo Fernandez",
+      "email": "leo.instructor@statuscredential.io",
+      "walletAddresses": ["0x9876...FFFF"],
+      "role": "instructor",
+      "xp": 4820,
+      "referrals": []
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-crypto-fundamentals",
+      "title": "Crypto Fundamentals",
+      "summary": "Master the basics of blockchain, wallets, and security.",
+      "tags": ["beginner", "wallets", "security"],
+      "instructorId": "user-instructor-1",
+      "difficulty": "Beginner",
+      "lessons": ["lesson-money", "lesson-blockchains", "lesson-wallets"],
+      "price": "free",
+      "publishState": "published"
+    },
+    {
+      "id": "course-defi-mechanisms",
+      "title": "DeFi Mechanisms",
+      "summary": "AMMs, yield farming, and automation.",
+      "tags": ["defi", "intermediate"],
+      "instructorId": "user-instructor-1",
+      "difficulty": "Intermediate",
+      "lessons": ["lesson-amms", "lesson-yields", "lesson-dca-project"],
+      "price": "paid",
+      "publishState": "published"
+    }
+  ],
+  "lessons": [
+    { "id": "lesson-money", "courseId": "course-crypto-fundamentals", "type": "article", "contentUrl": "/content/money.md", "durationSec": 180, "quizId": "quiz-fundamentals" },
+    { "id": "lesson-blockchains", "courseId": "course-crypto-fundamentals", "type": "video", "contentUrl": "/content/blockchains.mp4", "durationSec": 420 },
+    { "id": "lesson-wallets", "courseId": "course-crypto-fundamentals", "type": "interactive", "contentUrl": "/content/wallets.json", "durationSec": 360, "quizId": "quiz-fundamentals" },
+    { "id": "lesson-amms", "courseId": "course-defi-mechanisms", "type": "video", "contentUrl": "/content/amms.mp4", "durationSec": 600, "quizId": "quiz-defi" },
+    { "id": "lesson-yields", "courseId": "course-defi-mechanisms", "type": "article", "contentUrl": "/content/yields.md", "durationSec": 720 },
+    { "id": "lesson-dca-project", "courseId": "course-defi-mechanisms", "type": "project", "contentUrl": "/content/dca-project.json", "durationSec": 900 }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-fundamentals",
+      "items": [
+        { "id": "q1", "type": "multiple-choice", "question": "Why do blockchains matter?", "choices": ["Decentralization", "Speed", "Fees", "UI"], "answer": "Decentralization" }
+      ],
+      "passingScore": 80
+    },
+    {
+      "id": "quiz-defi",
+      "items": [
+        { "id": "q2", "type": "multiple-choice", "question": "What creates impermanent loss?", "choices": ["Fees", "AMM divergence", "Volatility", "Slippage"], "answer": "AMM divergence" }
+      ],
+      "passingScore": 80
+    }
+  ],
+  "trades": [
+    { "id": "trade-1", "userId": "user-student-1", "timestamp": "2024-04-10T10:00:00Z", "symbol": "ETH/USDC", "side": "BUY", "qty": 0.25, "price": 3200, "pnl": 21.5 },
+    { "id": "trade-2", "userId": "user-student-1", "timestamp": "2024-04-11T12:00:00Z", "symbol": "SOL/USDC", "side": "SELL", "qty": 10, "price": 180, "pnl": -3.5 }
+  ],
+  "certificates": [
+    { "id": "cert-1", "userId": "user-student-1", "courseId": "course-crypto-fundamentals", "issuedAt": "2024-05-01T10:00:00Z", "certUrl": "/certs/cert-1.pdf", "socialCardUrl": "/certs/cert-1.png" }
+  ],
+  "analytics": [
+    { "id": "event-1", "type": "course_enrolled", "meta": { "courseId": "course-crypto-fundamentals" }, "createdAt": "2024-04-10T10:00:00Z" }
+  ]
+}

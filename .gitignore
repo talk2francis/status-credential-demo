@@ -1,0 +1,7 @@
+node_modules/
+**/node_modules/
+status-network/.env
+secrets/
+*.zip
+memory/
+tracks.json

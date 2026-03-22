@@ -1,0 +1,10 @@
+{
+  "originStory": {
+    "frames": [
+      { "time": 0, "caption": "Why I built Status Credential Demo", "broll": "instructor-talking" },
+      { "time": 7, "caption": "From Solidity audits to classrooms", "broll": "code-to-class" },
+      { "time": 15, "caption": "Students wanted hands-on practice", "broll": "students-sandbox" }
+    ],
+    "audioPrompt": "Calm confident voiceover explaining journey"
+  }
+}

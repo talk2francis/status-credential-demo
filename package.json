@@ -1,0 +1,22 @@
+{
+  "name": "status-credential-demo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/frontend",
+    "packages/api"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev": "concurrently \"npm run dev -w packages/frontend\" \"npm run dev -w packages/api\"",
+    "demo:init": "node scripts/seed.js",
+    "deploy:status": "cd status-network && npx hardhat run --network statusTestnet scripts/deploy-status.ts",
+    "issue:status": "cd status-network && npx hardhat run --network statusTestnet scripts/issue-credential.ts"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
