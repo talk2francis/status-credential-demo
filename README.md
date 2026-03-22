@@ -10,6 +10,7 @@ Status Credential Demo is a Status Network–powered credential engine that issu
   - Deployment tx → https://sepoliascan.status.network/tx/0x4982abfffd0e574461aadc7a353fc8ad36c56b9132470fe13a270a90a7f51289
   - Credential issuance tx → https://sepoliascan.status.network/tx/0x1447cdc83b899bd46555324a9c72a5e2f2e624450768134656964a28f7f6fb78
 - **One-command demo:** `npm run issue:status` (after filling `.env`), which reproduces the credential issuance.
+- **Judge bundle:** [status-credential-demo.zip](https://github.com/talk2francis/status-credential-demo/raw/main/status-credential-demo.zip)
 
 ## Problem → Solution → Impact
 | Problem | Solution | Why Status Network | Impact |
