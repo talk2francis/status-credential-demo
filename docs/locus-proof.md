@@ -15,7 +15,7 @@
 
 ## Audit Log Sample
 ```
-{"timestamp": "2026-03-23T00:05:25Z", "intentId": "4f530901-7274-4724-a9b4-3b429cae306a", "email": "scam@example.com", "wallet": "0xdf17b4c0394ef7f231e1db629018a1189ff9cdaf", "estimatedCost": 0.006, "actualCost": 0.006, "balanceBefore": 10.0, "balanceAfter": 9.994, "resultSummary": {"deliverability": "undeliverable", "addressRisk": "high"}, "source": "manual-test"}
+{"timestamp":"2026-03-23T02:28:01.380Z","intentId":"8aef1bf2-ed60-427f-9db0-456fcdcd3c7e","email":"chatwithnonso01@gmail.com","wallet":"0xdf17b4c0394ef7f231e1db629018a1189ff9cdaf","estimatedCost":0.01,"actualCost":0,"balanceBefore":9.994,"balanceAfter":9.994,"resultSummary":{"deliverability":"deliverable","addressRisk":"low"}}
 ```
 
 ## Submission Checklist
