@@ -77,14 +77,3 @@ See [`docs/status-proof.md`](docs/status-proof.md) for the deployed contract, ex
 4. Output directory: `packages/frontend/dist`
 5. Environment variables: optional `VITE_API_URL` if the API is hosted elsewhere (not required because `/api` is served via the bundled serverless Express function in `api/[[...path]].ts`).
 6. Run `vercel deploy --prod` once authenticated to issue the public URL.
-
-## Locus Budget Broker (Locus track)
-- Path: `bots/locus-budget-broker/`.
-- Copy `.env.example` to `.env`, fill `LOCUS_API_KEY` + `TELEGRAM_BOT_TOKEN`, then run `npm install` and `npm run dev`.
-- Use `/check email@example.com` inside Telegram; the bot estimates the cost, asks for approval, pays via Locus (wrapped Email Reputation API), and logs every action to `data/locus-audit-log.jsonl`.
-- Architecture + safety notes live in `docs/locus-budget-broker-plan.md`.
-
-Proof artifacts for the Locus submission live in:
-- `data/locus-audit-log.jsonl` (JSONL audit trail).
-- `docs/locus-budget-broker-plan.md` (flow + guardrails).
-
